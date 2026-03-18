@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Hero section image height fix */
+.hero-img-softtech {
+    max-width: 100%;
+    height: auto;
+    max-height: 20px; /* Đề xuất chiều cao tối đa hợp lý cho hero */
+    min-height: 180px;
+    object-fit: contain;
+
+    box-shadow: 0 8px 32px 0 rgba(60, 60, 60, 0.10);
+    background: #f8f8f6;
+    transition: max-height 0.3s cubic-bezier(.4,2,.6,1);
+}
+
+.hero-image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8f6;
+    
+    box-shadow: 0 8px 32px 0 rgba(60, 60, 60, 0.10);
+    padding: 2rem;
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 420px;
+    max-height: 340px;
+}
+.rounded-5 {
+  border-radius: 3rem !important;
+}
